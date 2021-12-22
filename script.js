@@ -1,3 +1,26 @@
+$.ajax({
+    type: "GET",
+    url: "package.json",
+    dataType: "json",
+    success: function(data) {
+        console.log(data);
+        var prdtmame = '';
+        $.each(data, function(key, value) {
+            prdtname = get.getElementById('pname');
+            prdtname = value.name;
+        })
+
+
+    }
+
+
+});
+
+
+
+
+
+
 var btn = document.getElementById('addBtn');
 var spn = document.getElementById('span');
 let count = 0;

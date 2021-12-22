@@ -115,12 +115,32 @@
             color: #fff;
             background: #798bff;
         }
+        
+        @media (max-width: 768px) {
+            html {
+                font-size: 55%;
+            }
+            .wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .wrapper .card {
+                width: 150px;
+                margin: 5px 60px;
+                border-radius: 5px;
+                background: #fff;
+            }
+            .wrapper .card img {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <section>
-        <h1 class="heading" style="color:#fff">COSMETICS</h1>
+        <h1 class="heading" id="heading" style="color:#fff">COSMETICS</h1>
         <div class="wrapper">
             <div class="cart-nav">
                 <div class="icon">
@@ -134,9 +154,9 @@
                 <div class="content">
                     <div class="row">
                         <div class="details">
-                            <span>Name: Oil</span>
+                            <span id="pname">Name: Hair Oil</span>
                         </div>
-                        <div class="price">Price: 20₹</div>
+                        <div id="prate" class="price">Price: 122₹</div>
                         <div class="button">
                             <button id="addBtn" onClick="addCart()">Add to Cart</button>
                             <button id="removeCart" onClick="remCart()">Remove From Cart</button>
@@ -151,9 +171,9 @@
                 <div class="content">
                     <div class="row">
                         <div class="details">
-                            <span>Name: Oil</span>
+                            <span>Name:Face wash</span>
                         </div>
-                        <div class="price">Price: 20₹</div>
+                        <div class="price">Price: 123₹</div>
                         <div class="button">
                             <button id="addBtn" onClick="addCart()">Add to Cart</button>
                             <button id="removeCart" onClick="remCart()">Remove From Cart</button>
@@ -169,9 +189,9 @@
                 <div class="content">
                     <div class="row">
                         <div class="details">
-                            <span>Name: Oil</span>
+                            <span>Name:Hair Oil</span>
                         </div>
-                        <div class="price">Price: 20₹</div>
+                        <div class="price">Price: 122₹</div>
                         <div class="button">
                             <button id="addBtn" onClick="addCart()">Add to Cart</button>
                             <button id="removeCart" onClick="remCart()">Remove From Cart</button>
@@ -186,9 +206,9 @@
                 <div class="content">
                     <div class="row">
                         <div class="details">
-                            <span>Name: Oil</span>
+                            <span>Name: Face Wash</span>
                         </div>
-                        <div class="price">Price: 20₹</div>
+                        <div class="price">Price: 123₹</div>
                         <div class="button">
                             <button id="addBtn" onClick="addCart()">Add to Cart</button>
                             <button id="removeCart" onClick="remCart()">Remove From Cart</button>
