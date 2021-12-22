@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'poppins', sans-serif;
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            padding: 0 20px;
+            background: #798bff
+        }
+        
+        .wrapper {
+            max-width: 1130px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .wrapper .cart-nav {
+            position: absolute;
+            top: 0%;
+            right: 0;
+            width: 110px;
+            padding: 12px 15px;
+            background: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            cursor: pointer;
+            border-radius: 3px;
+            margin: 10px;
+        }
+        
+        .cart-nav .icon {
+            color: #798bff;
+        }
+        
+        .cart-nav .icon i {
+            font-size: 20px;
+        }
+        
+        .cart-nav .icon span {
+            font-weight: 400px;
+        }
+        
+        .cart-nav .item-numb {
+            color: #000000;
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+        .wrapper .card {
+            width: 230px;
+            margin: 5px 60px;
+            border-radius: 5px;
+            background: #fff;
+        }
+        
+        .wrapper .card img {
+            width: 100%;
+        }
+        
+        .wrapper .card .content {
+            padding: 3px;
+            margin: 3px;
+        }
+        
+        .content .row .details span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .wrapper .row .details p {
+            font-size: 17px;
+            font-weight: 500;
+        }
+        
+        .card .content .button {
+            margin: 3px;
+        }
+        
+        .card .content .button button {
+            width: 100%;
+            outline: none;
+            font-weight: 400;
+            border-radius: 5px;
+            border: 1px solid #798bff;
+            cursor: pointer;
+            padding: 3px;
+        }
+        
+        .button button:first-child {
+            color: #798bff;
+            background: #fff;
+            margin-bottom: 3px;
+        }
+        
+        .button button:last-child {
+            color: #fff;
+            background: #798bff;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 class="heading" style="color:#fff">COSMETICS</h1>
+        <div class="wrapper">
+            <div class="cart-nav">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+                <div id="span" class="item-numb">0</div>
+            </div>
+            <div class="card">
+                <img src="oil.jpg" alt="">
+                <div class="content">
+                    <div class="row">
+                        <div class="details">
+                            <span>Name: Oil</span>
+                        </div>
+                        <div class="price">Price: 20₹</div>
+                        <div class="button">
+                            <button id="addBtn" onClick="addCart()">Add to Cart</button>
+                            <button id="removeCart" onClick="remCart()">Remove From Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="oil.jpg" alt="">
+                <div class="content">
+                    <div class="row">
+                        <div class="details">
+                            <span>Name: Oil</span>
+                        </div>
+                        <div class="price">Price: 20₹</div>
+                        <div class="button">
+                            <button id="addBtn" onClick="addCart()">Add to Cart</button>
+                            <button id="removeCart" onClick="remCart()">Remove From Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="color:#fff">HOUSE HOLD</h1>
+        <div class="wrapper">
+            <div class="card">
+                <img src="oil.jpg" alt="">
+                <div class="content">
+                    <div class="row">
+                        <div class="details">
+                            <span>Name: Oil</span>
+                        </div>
+                        <div class="price">Price: 20₹</div>
+                        <div class="button">
+                            <button id="addBtn" onClick="addCart()">Add to Cart</button>
+                            <button id="removeCart" onClick="remCart()">Remove From Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="oil.jpg" alt="">
+                <div class="content">
+                    <div class="row">
+                        <div class="details">
+                            <span>Name: Oil</span>
+                        </div>
+                        <div class="price">Price: 20₹</div>
+                        <div class="button">
+                            <button id="addBtn" onClick="addCart()">Add to Cart</button>
+                            <button id="removeCart" onClick="remCart()">Remove From Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+</body>
+
+</html>
